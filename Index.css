@@ -1,19 +1,20 @@
 header {
-    height: 120px;
+    height: 100px;
     padding: 20px 20px;
     background-color: rgb(251, 204, 226);
     margin-bottom: 50px;
     font-size: 5px;
+    top:0;
     position: absolute;
-    top: 0;
     left: 0;
-    padding-right:1200px;
-    font-family: 'Lucida Sans Unicode';
+    width:100%;
+    text-align: left;
 }
 body{
     margin-top: 200px;
     font-family: 'Lucida Sans Unicode';
     padding: 3%;
+    text-align: center;
 }
 .intro{
     height:200px;
@@ -25,17 +26,17 @@ body{
 header ul {
     float: right;
     text-align: center;
-    display:flex;
-    flex-direction: row;
-    margin-left: 550px;
-    margin-top: 0;
-    position: absolute;
-    top: 0;
 }
 
+ul{
+    list-style:none;
+}
+li{
+    padding-top: 20px;
+}
 header li {
     margin: 30px 5px;
-    display:flex;
+    display: inline-block;
 }
 
 li a.active,

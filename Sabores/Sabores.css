@@ -1,0 +1,366 @@
+#header{
+    padding-top: 100px;
+    left: 0;
+    right:550;
+    margin:0;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(251,204,226);
+}
+
+ul {
+    float: right;
+    text-align: center;
+}
+.navPag{
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+li {
+    margin: 30px 5px;
+    display: flex;
+    float: right;
+    text-align: center;
+    margin-top: 90px;
+    
+}
+
+li a.active,
+li a:hover {
+    background: rgba(181, 223, 225, 255);
+    color: black;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+#nav{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 45px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    opacity: 0.9;
+    font-family: Lucida Sans Unicode;
+    font-size: 15px;
+    color: black;
+ }
+ #nav ul {
+    float: right;
+    text-align: center;
+}
+
+#nav li {
+    margin: 20px 60px;
+    display: inline-block;
+}
+
+li a.active,
+li a:hover {
+    color: black;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+#logo{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+ #container{
+    padding: 3%;
+ }
+
+#cremas, #chocolates, #dulceDeLeches, #frutales, #tortas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family:Tahoma;
+}
+.link{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+#crema, #chocolate, #dulceDeLeche, #frutal, #torta{
+    padding-top: 20px;
+    font-family: Lucida Sans Unicode;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 250px;
+    font-size: 11px;
+    border-radius: 17px;
+    text-align: center;
+}
+
+#linkCremas, #linkChocolates,#linkDulceDeLeches,#linkFrutales,#linkTortas{
+    font-size: 50px;
+    color: rgb(251,204,226);
+    padding-left: 45px;
+    margin-top: 40px;
+    font-family:Arial Narrow;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 25px;
+    font-family:Arial Narrow;
+    margin-bottom: 1px;
+}
+
+p{
+    margin-top: 1px;
+    font-size: 14px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;   
+    left: 0;
+    right:0;
+    font-size: 12px;
+    font-family: Lucida Sans Unicode;
+    background-color: rgb(251,204,226);
+}
+
+/*Portatil*/
+@media (max-width: 1024px)
+{
+    #nav li {
+        margin: 20px 40px; /**/
+        display: inline-block;
+    }
+    
+    li a.active,
+    li a:hover {
+        color: black;
+        border-radius: 50px;
+        transition: .5s;
+    }
+    
+    #crema, #chocolate, #dulceDeLeche, #frutal, #torta{
+        margin-left: 0; /**/
+        margin-right: 0; /**/
+        margin-top: 25px;
+        margin-bottom: 70px;
+    }
+
+    #linkCremas{
+        padding-left: 370px; /**/
+    }
+    #linkChocolates{
+        padding-left: 310px; /**/
+    }
+    #linkDulceDeLeches{
+        padding-left: 250px; /**/
+    }
+    #linkFrutales{
+        padding-left: 350px; /**/
+    }
+    #linkTortas{
+        padding-left: 400px; /**/
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px){
+    
+    #nav li {
+        margin: 20px 10px;
+    }
+    
+    #crema, #chocolate, #dulceDeLeche, #frutal, #torta{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 25px;
+        margin-bottom: 70px;
+    }
+
+    #linkCremas{
+        padding-left: 255px;
+    }
+    #linkChocolates{
+        padding-left: 190px;
+    }
+    #linkDulceDeLeches{
+        padding-left: 135px;
+    }
+    #linkFrutales{
+        padding-left: 230px;
+    }
+    #linkTortas{
+        padding-left: 265px;
+    }
+}
+
+/*sm*/
+@media (max-width: 540px){
+    #foto{
+        width: 540px;
+        height: 140px;
+    }
+    .checkbtn {
+        display: block;
+        float: left;
+        position: relative;
+        margin-top: 20px;
+        margin-left: -150px;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        top: 125px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #nav {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+    }
+    #nav ul li {
+        display: block;
+        margin: 0 0;
+        margin-left: 200px;
+        margin-right: 500px;
+    }
+    #nav ul li img{
+        height: 50px;
+        width: 50px;
+    }
+
+    #nav ul li a {
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    li div a:hover,
+    li div a.active{
+        left: 0;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    #logo{
+        margin-left: 100px;
+        margin-right: -500px;
+    }
+    footer{
+        width: 560px;
+        position: absolute;
+        padding-top: 20px;
+        text-align: center;   
+        left: 0;
+        right:0;
+        font-size: 12px;
+        font-family: Lucida Sans Unicode;
+        background-color: rgb(251,204,226);
+        z-index: -1;
+    }
+    #cremas, #chocolates, #dulceDeLeches, #frutales, #tortas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family:Tahoma;
+    }
+    
+    #crema, #chocolate, #dulceDeLeche, #frutal, #torta{
+        margin-left: 130px;
+        padding-top: 20px;
+        margin-bottom: 100px;
+        width: 300px;
+        height: 250px;
+        font-size: 11px;
+        border-radius: 17px;
+        text-align: center;
+    }
+    
+    #linkCremas,#linkDulceDeLeches{
+        padding-left: 155px;
+    }
+    #linkChocolates{
+        padding-left: 100px;
+    }
+    #linkFrutales{
+        padding-left: 140px;
+    }
+    #linkTortas{
+        padding-left: 165px;
+    }
+
+    h3{
+        font-size: 25px;
+        font-family:Arial Narrow;
+        margin-bottom: 1px;
+    }
+    
+    p{
+        margin-top: 1px;
+        font-size: 15px;
+    }
+}
+/*Movil L*/
+@media (max-width: 425px){
+    #foto{
+        width: 540px;
+        height: 140px;
+    }
+    #nav ul li {
+        margin: 5px 0;
+        margin-right: 30px;
+    }
+    #nav ul li img{
+        height: 75px;
+        width: 75px;
+    }
+
+    #nav ul li a {
+        font-size: 20px;
+        line-height: 15px;
+    }
+}
+
+/*Movil M*/
+@media (max-width: 375px){
+    #nav ul li {
+        margin: 20px 0;
+        margin-right: 30px;
+    }
+}
+
+/*Movil S*/
+@media (max-width: 320px){
+    #nav ul li {
+        margin: 40px 0;
+        margin-right: 30px;
+    }
+}

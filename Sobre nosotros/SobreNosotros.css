@@ -1,0 +1,104 @@
+header {
+ 
+    padding: 20px 20px;
+    background-color: rgb(251, 204, 226);
+    margin-bottom: 50px;
+    font-size: 5px;
+    top:0;
+    position: absolute;
+    left: 0;
+    width:100%;
+}
+.nosotros{
+    margin-top: 200px;
+}
+header ul {
+    float: right;
+    text-align: center;
+}
+
+header li {
+    margin: 30px 5px;
+    display: inline-block;
+}
+.textoimagen{
+    font-size: 30px;
+}
+.nombretexto{
+    font-size: 50px;
+}
+li a.active,
+li a:hover {
+    background: rgba(181, 223, 225, 255);
+    color: black;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.link {
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Lucida Sans Unicode;
+
+}
+
+footer {
+    background-image: url(https://nuevecuatrouno.com/wp-content/uploads/2019/06/heladerias-portales-dellasera.jpeg);
+    margin-top: 150px;
+    position: absolute;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    font-family: Lucida Sans Unicode;
+    background-position: center 50%;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.ImagenTexto {
+    padding: 100px;
+padding-left: 10px;
+    
+}
+ 
+.imagen {
+    width: 200px;
+    height: 200px; 
+    float: right;
+    border-radius: 50%;
+    
+    
+    
+}
+body{
+    padding: 3%;
+    font-family: Lucida Sans Unicode;
+}
+
+

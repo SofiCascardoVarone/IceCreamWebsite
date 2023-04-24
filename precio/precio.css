@@ -1,0 +1,76 @@
+header {
+      height: 120px;
+    padding: 20px 20px;
+    background-color: rgb(251, 204, 226);
+    margin-bottom: 50px;
+    font-size: 5px;
+    top:0;
+    position: absolute;
+    left: 0;
+    width:100%;
+}
+
+header ul {
+    float: right;
+    text-align: center;
+}
+
+header li {
+    margin: 30px 5px;
+    display: inline-block;
+}
+
+li a.active,
+li a:hover {
+    background: rgba(181, 223, 225, 255);
+    color: black;
+    border-radius: 50px;
+    transition: .5s;
+}
+#seleccion{
+    color: rgb(80, 48, 48)
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.link {
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Lucida Sans Unicode;
+
+}
+footer {
+    background-image: url(https://www.elespectador.com/resizer/TazeTrJrzV2beWS0wU3_sJXwl4c=/arc-anglerfish-arc2-prod-elespectador/public/FUKFCVSIZVAJJMRDP2LT2SQ6GA.jpg);
+    margin-top: 150px;
+    position: absolute;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    font-family: Lucida Sans Unicode;
+    background-position: center 40%;
+}
+.container{
+    margin-top: 150px;
+}
+

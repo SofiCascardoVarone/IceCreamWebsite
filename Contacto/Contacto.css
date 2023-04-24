@@ -1,0 +1,352 @@
+header {
+    height: 120px;
+    padding: 20px 20px;
+    background-color: rgb(251, 204, 226);
+    margin-bottom: 50px;
+    font-size: 5px;
+}
+
+.divtop{
+ display: flex; 
+ justify-content: center; 
+}
+
+header ul {
+    float: right;
+    text-align: center;
+    color: black;
+}
+
+
+header li {
+    margin: 30px 5px;
+    display: inline-block;
+    color: black;
+}
+
+li a.active,
+li a:hover {
+    background: rgba(181, 223, 225, 255);
+    color: black;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#tituloContacto {
+    color: rgba(181, 223, 225, 255);
+    font-size: 70px;
+}
+
+#tituloEstemosEn {
+    font-size: 50px;
+}
+
+.sideImage {
+    margin-top: 150px;
+    position: absolute;
+    padding-left: 70px;
+}
+
+footer {
+    background-image: url(https://www.elespectador.com/resizer/TazeTrJrzV2beWS0wU3_sJXwl4c=/arc-anglerfish-arc2-prod-elespectador/public/FUKFCVSIZVAJJMRDP2LT2SQ6GA.jpg);
+    margin-top: 150px;
+    position: absolute;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    font-family: Lucida Sans Unicode;
+    background-position: center 40%;
+}
+
+.link {
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Lucida Sans Unicode;
+
+}
+
+.form-input-container {
+    margin-left: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+
+}
+
+input {
+    background-color: rgba(181, 223, 225, 255);
+    border: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 90%;
+    min-width: 90%;
+    text-align: center;
+
+}
+
+textarea {
+    background-color: rgba(181, 223, 225, 255);
+    outline: none;
+    max-width: 90%;
+    min-width: 90%;
+    border: 0;
+    resize: none;
+}
+
+.form {
+    text-align: center;
+    border-radius: 50px;
+    border-width: 1px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255);
+    padding-left: 20px;
+
+    padding-right: 20px;
+}
+
+
+/* Portatil */
+@media (max-width: 1024px) {
+    .sideImage {
+        width: 300px;
+        height: 500px;
+        z-index: -1;
+    }
+}
+
+/*Falta formato 4k*/
+
+/* Tablet mas grande */
+@media (max-width: 952px) {
+    header ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        margin-top: 150px;
+    }
+
+    .checkbtn {
+        display: block;
+        float: right;
+        margin: 0 20px;
+    }
+
+    ul {
+        position: fixed;
+        margin-top: 4%;
+        width: 100%;
+        height: 100%;
+        background: rgb(251, 204, 226);
+        top: 80px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    header {
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: fixed;
+    }
+
+    header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+
+    footer {
+        margin-top: 120px;
+        padding: 50px 0;
+        position: relative;
+        z-index: -1;
+    }
+}
+
+/* Movil L */
+@media (max-width: 425px) {
+    #tituloContacto {
+        margin-left: 30px;
+        font-size: 50px;
+    }
+
+    #tituloEstemosEn {
+        margin-left: 35px;
+        font-size: 30px;
+    }
+
+    .form-input-container {
+        margin-left: 15px;
+        margin-right: -15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+
+    }
+
+    div button {
+        margin-left: 35px;
+    }
+
+    footer {
+        width: 460px;
+        margin-top: 50px;
+        position: absolute;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        background-position: center 50%;
+    }
+}
+
+/* Movil M */
+@media (max-width: 375px) {
+    #tituloContacto {
+        margin-left: 80px;
+        font-size: 50px;
+    }
+
+    #tituloEstemosEn {
+        margin-left: 85px;
+        font-size: 30px;
+    }
+
+    .form-input-container {
+        margin-left: 45px;
+        margin-right: -45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+
+    }
+
+    div button {
+        margin-left: 85px;
+    }
+
+    footer {
+        width: 460px;
+        margin-top: 50px;
+        position: absolute;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        background-position: center 50%;
+    }
+}
+
+/* Movil S */
+@media (max-width: 320px) {
+    #tituloContacto {
+        margin-left: 125px;
+        font-size: 35px;
+    }
+
+    #tituloEstemosEn {
+        margin-left: 135px;
+        font-size: 25px;
+    }
+
+    .form-input-container {
+        margin-left: 50px;
+        margin-right: -100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+
+    }
+
+    div button {
+        margin-left: 150px;
+    }
+
+    footer {
+        width: 460px;
+        margin-top: 50px;
+        position: absolute;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        left: 0;
+        right: 0;
+        background-position: center 50%;
+    }
+}

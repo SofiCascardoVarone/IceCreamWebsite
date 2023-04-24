@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./precio.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+
+        <!-- Link Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Compra</title>
+    </head>
+<body>
+    <header>
+        <header class="container-fluid"> <!--amplia toda la pantalla-->
+            <img src="https://tofuu.getjusto.com/orioneat-prod/JEcCTeJwpQZ4MK7Xh-Logo%20gabbale%202000px_png.png" width="90px" height="90px">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i> <!--Icon Menu despegable-->
+            </label>
+            <ul>
+                <li><a href="../Index.html"  target="_self"class="link" >Inicio</a></li>
+                <li><a href="../Sobre nosotros/SobreNosotros.html" target="_self"class="link" >Sobre nosotros</a></li>
+                <li><a href="../Sabores/Sabores.html" target="_self"class="link" >Productos</a></li>
+                <li><a href="../precio/precios.html"  target="_self"class="link" >Compras</a></li>
+                <li><a href="../Contacto/Contacto.html"  target="_self"class="link" >Contactanos</a></li>
+            </ul>
+          </header>
+    </header>
+
+<main>
+
+<div class="container">   
+    <form class="row text-center">
+        <div class="col-md-6 bg-white mx-auto text-center">
+
+                <div class="eleccion">
+                    <h2 class="mb-4">Arma tu pedido</h2>
+                    <div class="" id="seleccion">
+                       
+                        <a class="btn btn-warning fw-bold" data-bs-toggle="collapse" href="#sabores,#totalkilo" role="button" aria-expanded="false" aria-controls="collapseExample fw-bold" id="btnkilo">1 KG</a>
+                        <a class="btn btn-warning fw-bold" data-bs-toggle="collapse" href="#sabores,#totalmediokilo"  role="button" aria-expanded="false" aria-controls="collapseExample fw-bold" id="btnmediokilo">1/2 KG</a>
+                        <a class="btn btn-warning fw-bold" data-bs-toggle="collapse" href="#sabores,#totalcuarto"  role="button" aria-expanded="false" aria-controls="collapseExample" id="btncuarto">1/4 KG</a>
+                        <a class="btn btn-warning fw-bold" data-bs-toggle="collapse" href="#tortasabores" role="button" aria-expanded="false" aria-controls="collapseExample" id="btntorta">TORTA</a>
+                        
+                        
+                    </div>
+                </div>
+       
+                <div id="preciotodos"></div>
+                   <div class="collapse" id="totalkilo"> 
+                    <h3 class="m-3">Cantidad 1KG</h3>
+                    <input type="number" class="cantidad" id="cantidad1kg"/>
+                    </div>
+ 
+                    <div class="collapse" id="totalmediokilo"> 
+                        <h3 class="m-3">Cantidad 1/2 KG</h3>
+                        <input type="number" class="cantidad" id="cantidadmedio"/>
+                    </div>
+
+                    <div class="collapse" id="totalcuarto">
+                        <h3 class="m-3">Cantidad 1/4 KG</h3>
+                        <input type="number" class="cantidad" id="cantidadcuarto"/>
+                        </div>
+
+
+                <div id="sabores"class="collapse mb-4 text-start">
+                    <h4 class="text-center m-3">Elija 3 sabores</h4>
+                    <form id="form" name="form"> 
+                        <h6 class="m-2">CREMAS</h6>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox0,0)' name='checkbox0' id="0" >
+                        <label class="form-check-label" for="0">AMERICANA</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox1,0)' name='checkbox1' id="1" >     
+                        <label class="form-check-label" for="1">BANANA SPLIT</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox2,0)' name='checkbox2' id="2" >
+                        <label class="form-check-label" for="2">TIRAMISÚ</label> 
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox3,0)' name='checkbox3' id="3" >
+                        <label class="form-check-label" for="3">COCO CON DULCE DE LECHE</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox4,0)' name='checkbox4' id="4" >
+                        <label class="form-check-label" for="4">CHOCOTORTA</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox5,0)' name='checkbox5' id="5" >
+                        <label class="form-check-label" for="5">MASCARPONE</label> 
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox6,0)' name='checkbox6' id="6" >
+                        <label class="form-check-label" for="6">SAMBAYÓN</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox7,0)' name='checkbox7' id="7" >
+                        <label class="form-check-label" for="7">TRAMONTANA</label>
+                        </div>
+                        <h6 class="m-2">CHOCOLATE</h6>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox8,0)' name='checkbox8' id="8" >
+                        <label class="form-check-label" for="8">CLÁSICO</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox9,0)' name='checkbox9' id="9" >
+                        <label class="form-check-label" for="9">BLANCO PATAGÓNICO</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox10,0)' name='checkbox10' id="10" >
+                        <label class="form-check-label" for="10">INTENSO EXTRA CACAO</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox11,0)' name='checkbox11' id="11" >
+                        <label class="form-check-label" for="11">DOBLE TENTACIÓN</label> 
+                        </div>
+                        <h6 class="m-2">DULCE DE LECHE</h6>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox12,0)' name='checkbox12' id="12" >
+                        <label class="form-check-label" for="12">CLÁSICO</label>
+                        </div>			
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox13,0)' name='checkbox13' id="13" >
+                        <label class="form-check-label" for="13">DULCE DE LECHE GRANIZADO</label>
+                        </div>		
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox14,0)' name='checkbox14' id="14" >
+                        <label class="form-check-label" for="14">MINI OREO</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox15,0)' name='checkbox15' id="15" >
+                        <label class="form-check-label" for="15">TENTACIÓN</label> 
+                        </div>
+                        <h6 class="m-2">FRUTALES</h6>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox16,0)' name='checkbox16' id="16" >
+                        <label class="form-check-label" for="16">FRUTILLA A LA CREMA</label>
+                        </div>		
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox17,0)' name='checkbox17' id="17" >
+                        <label class="form-check-label" for="17">FRUTILLA AL NATURAL</label>
+                        </div>	
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox18,0)' name='checkbox18' id="18" >
+                        <label class="form-check-label" for="18">MINI OREO</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox19,0)' name='checkbox19' id="19" >
+                        <label class="form-check-label" for="19">LIMON</label>
+                        </div>
+                        <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox20,0)' name='checkbox20' id="20" >
+                        <label class="form-check-label" for="20">MOUSSE DE MARACUYÁ</label>
+                        </div>
+                         <div>
+                        <input class="form-check-input" type='checkbox' onclick='validar(form.checkbox21,0)' name='checkbox21' id="21" >
+                        <label class="form-check-label" for="21">ANANÁ</label> 
+                        </div>	
+                    </form>
+                </div>
+        </div>
+
+            <div class="collapse" id="totalkilo">   
+            <div class="row" id="total">
+            <h2 class="fw-bold text-center">$<span id="kiloprecio"></span></h2>              
+            </div>
+            </div> 
+
+            <div class="collapse" id="totalmediokilo">    
+            <div class="row" id="total">
+            <h2 class="fw-bold text-center">$<span id="medioprecio"></span></h2>              
+            </div>
+            </div> 
+
+            <div class="collapse" id="totalcuarto">   
+            <div class="row" id="total">
+            <h2 class="fw-bold text-center">$<span id="cuartoprecio"></span></h2>              
+            </div>
+            </div> 
+
+            <div class="collapse" id="tortasabores">
+                <form id="form" class="col-md-6 bg-white mx-auto text-center">
+                    <div id="tortasabores" class="form-check mb-4 text-start" id="form1">
+                            <h6 class="m-1">Tortas</h6>
+                            <div id="containertorta">
+                                <div>
+                                <input class="form-check-input" type="checkbox" value="1000"  id="BALCARCE" name="anana" >
+                                <label class="form-check-label" for="BALCARCE">BALCARCE</label>
+                                </div>
+                                <div>
+                                <input class="form-check-input" type="checkbox" value="1500"  id="CHEESECAKE" name="" >
+                                <label class="form-check-label" for="CHEESECAKE">CHEESECAKE</label>
+                                </div>
+                                <div>
+                                <input class="form-check-input" type="checkbox" value="1700"  id="LEMONPIE" name="" >
+                                <label class="form-check-label" for="LEMONPIE">LEMON PIE</label>
+                                </div>
+                                <div>
+                                <input class="form-check-input" type="checkbox" value="1450" id="VALENTIN" name="">
+                                <label class="form-check-label" for="VALENTIN">VALENTIN</label>
+                                </div>
+                          </div>         
+                    </div> 
+                </form>
+                <div class="total">
+                <h2 class="fw-bold text-center">$<span id="totaltorta"></span></h2>
+                </div> 
+            </div> 
+        </div>
+
+
+
+                <h2 class="text-center m-4" id="login">Rellena con tus datos</h2>
+            <form class="row g-3 needs-validation justify-content-center text-center" novalidate>
+                   
+                    <div class="col-md-9">
+                    <input type="text" class="form-control" id="" placeholder="Nombre" required>
+                    <div class="invalid-feedback">
+                    Completar con su nombre
+                    </div>
+                    </div>
+                    
+        
+            
+                    <div class="col-md-5">
+                    <input type="number" class="form-control" id="" placeholder="Celular" required style="appearance: textfield">
+                    <div class="invalid-feedback">
+                    Completar con su numero de celular
+                    </div>
+                    </div>
+            
+                    <div class="col-md-4">
+                    <input type="number" class="form-control" id="" placeholder="DNI" required style="appearance: textfield">
+                    <div class="invalid-feedback">
+                    Completar con su DNI
+                    </div>
+                    </div>
+               
+                    <div class="col-md-9">
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="direccion" required>
+                    <div class="invalid-feedback">
+                    Completar con su direccion 
+                    </div>
+                    </div>
+
+                    <h2 class="text-center" id="login">Forma de pago</h2>
+                    <div class="form-group w-75 text-start">
+                        <div class="form-check">
+                        <label class="form-check-label" for="efectivo">Efectivo
+                        <input type="radio" name="pagos" id="efectivo" class="form-check-input" value="Efectivo" required>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label" for="credito">Tarjeta de Credito
+                        <input type="radio" name="pagos" id="credito" class="form-check-input" value="Tarjeta de Credito" required>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label" for="debito">Tarjeta de Debito
+                        <input type="radio" name="pagos" id="debito" class="form-check-input" value="Tarjeta de Debito" required>
+                        </div>      
+                    </div> 
+
+                <div class="col-12">
+                <button class="btn btn-primary" type="submit" >Listo!</button>
+                </div>
+                    
+           
+ 
+
+            </div>
+            </form>        
+        </div>     
+  
+</div>
+</main>
+<footer>
+    <img src="https://tofuu.getjusto.com/orioneat-prod/JEcCTeJwpQZ4MK7Xh-Logo%20gabbale%202000px_png.png"width="260px" height="260px">
+    <p>©Gabbale Helados artesanales, Buenos Aires | Argentina</p>
+  </footer>
+</body>
+<script src="precio.js"></script>
+</html>
